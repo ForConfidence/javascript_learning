@@ -1,0 +1,55 @@
+<html>
+<head><meta charset="utf-8"></head>
+<body>
+    <center>
+    <div>
+    <script language="javascript" type="text/javascript">
+    document.title = "字符串对象";
+    var str = "I like Visual C#";
+    //利用已定义的字符串初始化一字符串对象
+    strObj = new String(str);
+    //显示原始字符串
+    document.write("<br>orignal: "+strObj.toString());
+    //将字体加粗
+    document.write("<br>bold: "+strObj.bold());
+    //放大字体
+    document.write("<br>big: "+strObj.big());
+    //缩小字体
+    document.write("<br>small: "+strObj.small());
+    //获取字符串长度
+    document.write("<br>length: "+strObj.length);
+    //将字符串转换为小写
+    document.write("<br>toLowerCase: "+strObj.toLowerCase());
+    //将字符串转换为大写
+    document.write("<br>toUpperCase: "+strObj.toUpperCase());
+    //查找字符串中匹配项
+    document.write("<br>match 'Visual': "+strObj.match("Visual"));
+    document.write("<br>match 'visual': "+strObj.match("visual"));
+    //获取与字符串中匹配项的索引
+    document.write("<br>indexOf 'Visual': "+strObj.indexOf("Visual"));
+    document.write("<br>indexOf 'visual': "+strObj.indexOf("visual"));
+    //斜体显示字符串
+    document.write("<br>italics: "+strObj.italics("visual"));
+    //产生闪烁效果
+    document.write("<br>blink: "+strObj.blink("visual"));
+    //固定字效果，与HTML中<TT>标记效果一样
+    document.write("<br>fixed: "+strObj.fixed("visual"));
+    //删除字效果
+    document.write("<br>strike: "+strObj.strike("visual"));
+    //替换字符串
+    document.write("<br>indexOf: "+strObj.replace(/Visual C#/,".NET"));
+    //下标字效果
+    document.write("<br>sub: "+strObj.sub());
+    //上标字效果
+    document.write("<br>sup: "+strObj.sup());
+    //设置字体颜色
+    document.write("<br>fontcolor: "+strObj.fontcolor("red"));
+    //设置字体大小
+    document.write("<br>fontsize: "+strObj.fontsize(13));
+    //添加超链接
+    document.write("<br>link: "+strObj.link("http://www.forfunfunfun.cn/"));
+    </script>
+    </div>
+    </center>
+</body>
+</html>

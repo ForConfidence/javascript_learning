@@ -1,0 +1,43 @@
+<html>
+<head>
+    <title>JavaScript函数定义</title>
+</head>
+<body>
+    <div>
+    <script language="javascript" type="text/javascript">
+    function filtration1(str){
+    var regex = /[A-Za-z/?#:=]/g;
+    arr =str.match(regex,"");
+    str = arr.join("");
+    return str;
+    }
+    var url = "1231addaq*&^***";
+    var strUrl = filtration1(url) ;
+    alert(strUrl);
+        
+       if (strUrl.length != 0) 
+       { 
+           alert('参数错误'); 
+           window.location.href="http://baidu.com";
+       }
+       else
+       {
+        alert( window.location.href); 
+       }
+    <!--定义一个函数-->
+    function Add(a,b)
+    {
+        <!--将参数列表中的两个参数相加，并将结果返回主程序-->
+        return(a+b);
+    }
+    var a,b;
+    a=20;
+    b=15;
+    <!--调用自定义函数-->
+    var result=Add(a,b);
+    <!--显示结果-->
+    document.write(a+"+"+b+"="+result);
+    </script>
+    </div>
+</body>
+</html>

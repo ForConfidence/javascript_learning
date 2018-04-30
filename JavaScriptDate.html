@@ -1,0 +1,43 @@
+<html>
+<head>
+
+    <meta charset="utf-8">
+
+</head>
+<body>
+    <center>
+    <div>
+    <script language="javascript" type="text/javascript">
+    document.title = "显示当前时间";
+    <!--定义一个获取时间的函数-->
+    function GetDate()
+    {
+        <!--声明变量-->
+        var date,datestr;
+        <!--创建 Date 对象-->
+        date = new Date();
+        datestr = "今天是: "+"<br>";  //fhgfgh
+        <!--获取年份-->
+        datestr += date.getFullYear() + "年";
+        <!--获取月份-->
+        datestr += date.getMonth() + 1 + "月";
+        <!--获取日期-->
+        datestr += date.getDate() + "日";
+        <!--获取星期数-->
+        datestr += "星期" + date.getDay();
+        datestr += "<br>你的登录时间是:<br>";
+        <!--获取小时数-->
+        datestr += date.getHours()+":";
+        <!--获取分钟数-->
+          datestr += date.getMinutes()+":";
+        <!--获取秒钟数-->
+          datestr += date.getSeconds()+":";
+        <!--返回整个日期字符串-->
+        return(datestr);
+    }
+    document.write(GetDate());
+    </script>
+    </div>
+    </center>
+</body>
+</html>

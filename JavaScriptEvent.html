@@ -1,0 +1,39 @@
+<html>
+<body onload="EnterFun()" onunload="exitFun()">
+  <center>
+  <div>
+  <script language="JavaScript" type="text/javascript">
+  document.title="事件处理程序";
+  function clickFun()
+  {
+      alert("你好!你单击了鼠标");
+  }
+  function exitFun()
+  {
+      alert("欢迎下次再来！");
+  }
+  function EnterFun()
+  {
+      alert("欢迎光临本网站！");
+  }
+  function DoubleclickFun()
+  {
+      alert("你好!你双击了鼠标");
+  }
+  </script>
+  <br>
+  //添加按钮的单击事件响应函数
+  <input type="button" value="单击事件" onclick="clickFun()" />
+  <br>
+  //添加按钮的双击击事件的响应函数
+  <input type="button" value="双击事件" ondblclick="DoubleclickFun()" />
+  <br>
+  //实现图片切换
+  <img alt="图片提示文字" src="Image/first.png" id="imagepng" />
+  <a href="http://www.163.com"
+  onmouseover="imagepng.src='Image/second.png'"
+  onmouseout="imagepng.src='Image/first.png'">进入网站</a>
+  </div>
+  </center>
+</body>
+</html>

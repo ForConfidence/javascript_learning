@@ -1,0 +1,67 @@
+<html>
+<head>
+    <meta charset="utf-8">
+
+</head>
+<body>
+    <script language="javascript">
+        var url=window.location.hash;
+        var surl=url.toString();
+        if(surl!= "undefined" && surl != null && surl != "")
+        {
+           alert("参数错误！")；
+           window.location="login.html"；
+        }
+    </script>
+    <center>
+    <div>
+    <script language="javascript" type="text/javascript">
+    document.title = "数组的使用";
+    <!--定义一个数组-->
+    books = new Array(4);
+    bookshop = new Array(4);
+    books[0] = "红楼梦";
+    books[1] = "三国演义";
+    books[2] = "水浒传";
+    books[3] = "西游记";
+    bookshop[0] = "East Bookshop";
+    bookshop[1] = "West Bookshop";
+    bookshop[2] = "South Bookshop";
+    bookshop[3] = "North Bookshop";
+    var i;
+    <!--显示数组中的所有元素值-->
+    document.write("现有的书籍："+"<br>");
+    for(i=0;i<books.length;i++)
+    {
+        document.write(books[i].toString()+"<br>");
+    }
+    document.write("<br>"+"书籍所属地："+"<br>");
+    for(i=0;i<bookshop.length;i++)
+    {
+        document.write(bookshop[i].toString()+"<br>");
+    }
+    <!--换行-->
+    document.write("<br>");
+    <!--绘制水平线-->
+    document.write("<hr width='50%'>"+"<br>");
+    document.write("连接两个数组的元素："+"<br>");
+    bookInfo = new Array(8);
+    <!--连接两个数组-->
+    bookInfo = books.concat(bookshop);
+    <!--输出连接后的内容-->
+    for(i=0;i<bookInfo.length;i++)
+    {
+        document.write(bookInfo[i].toString()+"<br>");
+}
+    bookInfo.sort();
+    <!--输出排序后的内容-->
+    document.write("<br>"+"排序后的内容："+"<br>");
+    for(i=0;i<bookInfo.length;i++)
+    {
+        document.write(bookInfo[i].toString()+"<br>");
+    }
+    </script>
+    </div>
+  </center>
+</body>
+</html>

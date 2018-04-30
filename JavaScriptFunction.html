@@ -1,0 +1,33 @@
+<html>
+<head><meta charset="utf-8"></head>
+<body>
+    <center>
+    <div>
+    <script language="javascript" type="text/javascript">
+    document.title = "函数对象";
+    function fun(a,b)
+    {
+        var str = "a+b=";
+        var res = a+b;
+        str+=res;
+        document.write(str);
+    }
+    //定义函数对象的属性
+    fun.Name = "fun";
+    //显示属性值
+    document.write("fun.Name="+fun.Name);
+    //定义指向该函数的指针
+    var funptr=fun;
+    document.write("<br>");
+    //将参数传给指针指向的函数，并执行函数
+    funptr(5,10);
+    document.write("<br>");
+    //显示定义函数的代码
+    document.write(typeof fun);
+    document.write("<br>");
+    document.write(fun);
+    </script>
+    </div>
+    </center>
+</body>
+</html>
